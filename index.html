@@ -1,0 +1,56 @@
+<!-- 帮助同学写的一个扫描入校码的页面，动态修改并显示时间 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 顶部个人信息栏 -->
+    <div class="titleBar">
+        <div class="left">
+            <div class="left-item">周刊</div>
+            <div class="left-item">202033200437</div>
+            <div class="left-item">学生/310-音乐学院/音乐学/音乐学2004</div>
+            <div class="left-item">人员类别：学生231-本科生</div>
+            <div class="left-item">返校状态：允许返校</div>
+        </div>
+        <div class="right">
+            <div class="circle">
+                绿码
+            </div>
+        </div>
+    </div>
+    <!-- 下方信息显示模块 -->
+    <div class="container">
+        <!-- 时间显示部分 -->
+        <div class="time-box">
+            <div class="month-date"></div>
+            <div class="time"></div>
+        </div>
+        <!-- 返校码部分 -->
+        <div class="code-box">
+            <div class="text">浙江师范大学返校码</div>
+            <img src="./img/barCode.png" alt="">
+        </div>
+        <!-- 进校扫码 -->
+        <div class="title1">进校扫码</div>
+        <!-- 外出、进出 -->
+        <div class="title2">外出时长：&nbsp;30分钟</div>
+        <div class="title2">进出校特殊情况：&nbsp;5-无</div>
+        <!-- 底部信息 -->
+        <div class="title3">
+            <div class="title3-item">您当前扫码时间：</div>
+            <div class="title3-item">您当前扫码位置：校西南门_进校通道_1</div>
+            <div class="title3-item">离测距点距离：30米</div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
