@@ -2,6 +2,7 @@
 let monDate = document.querySelector(".month-date");
 let time = document.querySelector(".time")
 let bottomBox = document.querySelector(".title3").children[0]
+let hesuanDate = document.querySelector('#hesuanDate')
 console.log(bottomBox);
 
 
@@ -25,7 +26,13 @@ setTime = function () {
 
 // 立刻执行定时器，并且清除定时器
 let curTime = setTime();
+
+
 bottomBox.innerHTML += curTime.year + '-' + curTime.month.toString().padStart(2, '0') + '-' + curTime.date.toString().padStart(2, '0') + ' ' + curTime.hours + ':' + curTime.minutes + ':' + curTime.seconds
+let d = new Date();
+var preDate = new Date(d.getTime() - 24*60*60*1000).format("Y-m-d");
+console.log('preDate', preDate);
+hesuanDate.innerHTML += preDate + " 07:20:27"
 
 datasInterval = setInterval(setTime, 1000);
 
