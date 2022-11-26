@@ -18,6 +18,8 @@
         line-height: 20px;
 
         .left-item {
+            // padding-top: 10px;
+            padding-bottom: 5px;
             &:first-of-type {
                 font-size: 15px;
             }
@@ -63,14 +65,21 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        flex: 1;
 
         .upText {
-            font-weight: bold;
+            // font-weight: bold;
             font-size: 18px;
+            background-color: #e93325;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 8px;
+            color: #fff;
         }
 
         .downText {
-            color: #5289a8;
+            // color: #5289a8;
+            color: #000;
             font-size: 16px;
             font-weight: bold;
         }
